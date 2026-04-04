@@ -36,6 +36,7 @@
   background-color: transparent;
   cursor: pointer;
   transition: background-color 300ms;
+  font-family: var(--f-inter);
 }
 
 .menu-item__add-btn:hover,
