@@ -20,6 +20,8 @@
 
     <!-- Blocks-->
     <link rel="stylesheet" href="./src/css/blocks/header/header.css" />
+    <link rel="stylesheet" href="./src/css/blocks/menu/menu.css" />
+    <link rel="stylesheet" href="./src/css/blocks/menu-item/menu-item.css" />
   </head>
 
   <body>
@@ -34,5 +36,16 @@
         />
       </div>
     </header>
+
+    <main>
+      <section class="menu">
+        <div class="menu__inner container">
+          <h2 class="menu__title sr-only">Menu</h2>
+          <ul class="menu__list reset-list" id="menu-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>
