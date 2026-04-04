@@ -1,0 +1,26 @@
+.order {
+  color: var(--c-neutral-700);
+  padding-bottom: 3.31rem; /* 53px */
+}
+.order__summary {
+  margin-bottom: 3.31rem; /* 53px */
+}
+
+.order__title {
+  text-align: center;
+  font-weight: var(--fw-200);
+  font-size: var(--fs-600);
+  margin-bottom: 3.87rem; /* 62px */
+}
+
+.order__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.37rem; /* 22px */
+  border-bottom: 2px solid #393333;
+  padding-bottom: 2rem; /* 32px */
+}
+
+.order__total {
+  padding-top: 0.87rem; /* 14px */
+}
