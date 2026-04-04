@@ -20,6 +20,8 @@
 
     <!-- Blocks-->
     <link rel="stylesheet" href="./src/css/blocks/header/header.css" />
+    <link rel="stylesheet" href="./src/css/blocks/menu/menu.css" />
+    <link rel="stylesheet" href="./src/css/blocks/menu-item/menu-item.css" />
   </head>
 
   <body>
@@ -34,5 +36,50 @@
         />
       </div>
     </header>
+
+    <main>
+      <section class="menu">
+        <div class="menu__inner container">
+          <h2 class="menu__title sr-only">Menu</h2>
+          <ul class="menu__list reset-list">
+            <li class="menu-item">
+              <p class="menu-item__emoji">🍕</p>
+              <div class="menu-item__content">
+                <h3 class="menu-item__name">Pizza</h3>
+                <p class="menu-item__ingredients">
+                  pepperoni,mushrom,mozarella
+                </p>
+                <p class="menu-item__price">$14</p>
+              </div>
+              <button class="menu-item__add-btn" aria-label="Add to order">
+                +
+              </button>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__emoji">🍔</p>
+              <div class="menu-item__content">
+                <h3 class="menu-item__name">Hamburger</h3>
+                <p class="menu-item__ingredients">beef, cheese, lettuce</p>
+                <p class="menu-item__price">$12</p>
+              </div>
+              <button class="menu-item__add-btn" aria-label="Add to order">
+                +
+              </button>
+            </li>
+            <li class="menu-item">
+              <p class="menu-item__emoji">🍺</p>
+              <div class="menu-item__content">
+                <h3 class="menu-item__name">Pizza</h3>
+                <p class="menu-item__ingredients">grain, hops, yeast, water</p>
+                <p class="menu-item__price">$12</p>
+              </div>
+              <button class="menu-item__add-btn" aria-label="Add to order">
+                +
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
