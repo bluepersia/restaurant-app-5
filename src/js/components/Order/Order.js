@@ -15,6 +15,8 @@ export default function Order(root, checkout, menuData, cartContext) {
     .querySelector("[data-complete-order]")
     .addEventListener("click", handleCompleteOrderClick);
 
+  summaryEl.addEventListener("click", handleOrderClick);
+
   function renderOrder(cart) {
     if (cart.length <= 0) {
       root.style.display = "none";
@@ -30,6 +32,12 @@ export default function Order(root, checkout, menuData, cartContext) {
   function handleCompleteOrderClick() {
     checkout.style.display = "block";
     checkout.focus();
+  }
+
+  function handleOrderClick(e) {
+    if (e.target.dataset.remove) {
+      cartContext.removeItem(Number(e.target.dataset.remove));
+    }
   }
 
   function renderSubmission(name) {
