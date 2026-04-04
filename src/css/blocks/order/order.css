@@ -1,6 +1,7 @@
 .order {
   color: var(--c-neutral-700);
   padding-bottom: 3.31rem; /* 53px */
+  display: none;
 }
 .order__summary {
   margin-bottom: 3.31rem; /* 53px */
