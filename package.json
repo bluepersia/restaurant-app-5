@@ -16,5 +16,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0"
   }
 }
