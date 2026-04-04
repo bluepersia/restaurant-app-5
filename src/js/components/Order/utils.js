@@ -107,4 +107,11 @@ function generateOrderSummaryHTML(order) {
             </div>`;
 }
 
-export { generateOrderSummaryHTML, computeOrder };
+function generateSubmissionHTML(name) {
+  return `
+    <div class="submission container">
+        <p class="submission__text">Thanks, ${name}! Your order is on its way!</p>
+    </div>`;
+}
+
+export { generateOrderSummaryHTML, computeOrder, generateSubmissionHTML };
