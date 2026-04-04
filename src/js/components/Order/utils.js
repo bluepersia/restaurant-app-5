@@ -101,7 +101,7 @@ function generateOrderSummaryHTML(order) {
                 .join("\n")}
             </ul>
 
-            <div class="order__total order-item">
+            <div class="order__total order-item" aria-live="polite">
               <h3 class="order-item__name">Total price:</h3>
               <p class="order-item__price">$${order.total}</p>
             </div>`;
