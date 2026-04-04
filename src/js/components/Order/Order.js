@@ -29,6 +29,7 @@ export default function Order(root, checkout, menuData, cartContext) {
 
   function handleCompleteOrderClick() {
     checkout.style.display = "block";
+    checkout.focus();
   }
 
   function renderSubmission(name) {

@@ -54,14 +54,25 @@
           <h2 class="order__title">Your order</h2>
           <div class="order__summary" data-order-summary></div>
 
-          <button class="order_complete-btn btn" data-complete-order>
+          <button
+            class="order_complete-btn btn"
+            data-complete-order
+            aria-controls="checkout"
+            aria-haspopup="dialog"
+          >
             Complete order
           </button>
         </div>
       </section>
     </main>
 
-    <section class="checkout" id="checkout">
+    <section
+      class="checkout"
+      id="checkout"
+      tabindex="-1"
+      role="dialog"
+      aria-label="Checkout"
+    >
       <h2 class="checkout__title">Enter card details</h2>
       <form class="checkout__form" data-form>
         <label for="name" class="sr-only">Name</label>
