@@ -1,0 +1,24 @@
+.order-item {
+  display: flex;
+  align-items: center;
+}
+
+.order-item__name {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-200);
+  margin-right: 0.81rem; /* 13px */
+}
+
+.order-item__price {
+  margin-left: auto;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-200);
+}
+
+.order-item__remove-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--c-neutral-200);
+  font-size: var(--fs-100);
+}

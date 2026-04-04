@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="./src/css/blocks/header/header.css" />
     <link rel="stylesheet" href="./src/css/blocks/menu/menu.css" />
     <link rel="stylesheet" href="./src/css/blocks/menu-item/menu-item.css" />
+    <link rel="stylesheet" href="./src/css/blocks/order/order.css" />
+    <link rel="stylesheet" href="./src/css/blocks/order-item/order-item.css" />
+    <link rel="stylesheet" href="./src/css/blocks/btn/btn.css" />
   </head>
 
   <body>
@@ -42,6 +45,14 @@
         <div class="menu__inner container">
           <h2 class="menu__title sr-only">Menu</h2>
           <ul class="menu__list reset-list" id="menu-list"></ul>
+        </div>
+      </section>
+      <section class="order" id="order">
+        <div class="order__inner container">
+          <h2 class="order__title">Your order</h2>
+          <div class="order__summary" data-order-summary></div>
+
+          <button class="order_complete-btn btn">Complete order</button>
         </div>
       </section>
     </main>

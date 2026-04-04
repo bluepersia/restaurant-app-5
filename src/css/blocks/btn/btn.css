@@ -1,0 +1,17 @@
+.btn {
+  padding: 1.12rem;
+  width: 100%;
+  background-color: var(--c-accent-200);
+  border: none;
+  border-radius: var(--br-100);
+  font-family: var(--f-verdana);
+  color: var(--c-neutral-100);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.btn:hover,
+.btn:focus {
+  filter: brightness(130%);
+}
