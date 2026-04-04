@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./src/css/blocks/order/order.css" />
     <link rel="stylesheet" href="./src/css/blocks/order-item/order-item.css" />
     <link rel="stylesheet" href="./src/css/blocks/btn/btn.css" />
+    <link rel="stylesheet" href="./src/css/blocks/checkout/checkout.css" />
+    <link rel="stylesheet" href="./src/css/blocks/submission/submission.css" />
   </head>
 
   <body>
@@ -52,10 +54,48 @@
           <h2 class="order__title">Your order</h2>
           <div class="order__summary" data-order-summary></div>
 
-          <button class="order_complete-btn btn">Complete order</button>
+          <button class="order_complete-btn btn" data-complete-order>
+            Complete order
+          </button>
         </div>
       </section>
     </main>
+
+    <section class="checkout" id="checkout">
+      <h2 class="checkout__title">Enter card details</h2>
+      <form class="checkout__form" data-form>
+        <label for="name" class="sr-only">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          class="checkout__input"
+          required
+        />
+        <label for="card" class="sr-only">Card Number</label>
+        <input
+          type="text"
+          name="card"
+          id="card"
+          placeholder="Enter card number"
+          pattern="[0-9]+"
+          class="checkout__input"
+          required
+        />
+        <label for="cvv" class="sr-only">CVV</label>
+        <input
+          type="number"
+          name="cvv"
+          id="cvv"
+          placeholder="Enter CVV"
+          class="checkout__input"
+          required
+        />
+
+        <button type="submit" class="checkout__pay-btn btn btn--lg">Pay</button>
+      </form>
+    </section>
 
     <script src="./src/js/index.js" type="module"></script>
   </body>
